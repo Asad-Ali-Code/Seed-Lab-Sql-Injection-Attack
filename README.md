@@ -8,3 +8,4 @@ SQL injection attack
 Instruction: https://seedsecuritylabs.org/Labs_16.04/PDF/Web_SQL_Injection.pdf
 
 # Setup
+![alt text](http://url/to/img.png)
